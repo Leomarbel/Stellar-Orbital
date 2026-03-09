@@ -1,7 +1,10 @@
 # Stellar
 An Asymetrical Multiplayer Sparcefaring Roguelite
 
+<img width="2245" height="3179" alt="MS3 Stellar Poster" src="https://github.com/user-attachments/assets/8e5a1b1f-a213-4dbb-ab24-5d4653184667" />
+
 Summary
+
 
 Starship Game is an rogue-lite asymmetrical co-operative shoot-em up game. 
 
