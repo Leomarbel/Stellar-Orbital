@@ -1,7 +1,7 @@
 # Stellar
 An Asymetrical Multiplayer Sparcefaring Roguelite
 
-<img width="2245" height="3179" alt="MS3 Stellar Poster" src="https://github.com/user-attachments/assets/8e5a1b1f-a213-4dbb-ab24-5d4653184667" />
+<img width="1414" height="2000" alt="Copy of Poster MS1" src="https://github.com/user-attachments/assets/80c9a188-eaf7-483b-bcb1-d9604e9e7b21" />
 
 Summary
 
@@ -16,6 +16,9 @@ THIS GAME REQUIRES 2 GAME INSTANCE TO PLAY!!! If you are just trying out on one 
 
 ---
 ## Instructions 
+
+https://youtu.be/9wRZbnvu_18 (Video Gameplay Demo)
+
 (This is implemented in the game in future versions)
 
 The overall goal of this game is to travel the most worlds as possible.
@@ -97,4 +100,4 @@ System design and Features
   
     Each run will be uniquely different in terms of monsters and loot in the universe. Explore cautiously, no two universes are the same!
 
-
+<img width="2245" height="3179" alt="MS3 Stellar Poster" src="https://github.com/user-attachments/assets/8e5a1b1f-a213-4dbb-ab24-5d4653184667" />
