@@ -5,7 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using TMPro;
 using UnityEngine;
-using WebSocketSharp;
+
 
 [RequireComponent(typeof(PhotonView))]
 public class RoleSelectionManager : MonoBehaviourPunCallbacks

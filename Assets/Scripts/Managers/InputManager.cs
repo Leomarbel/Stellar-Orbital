@@ -11,7 +11,8 @@ public class InputManager : MonoBehaviour
         { "fire", KeyCode.Mouse0 },
 
         //Technician interact key
-        { "interact", KeyCode.Z },   
+        { "interact", KeyCode.Z },
+        { "interactAlt", KeyCode.E },
 
         //Technician Ammo Reload Minigame
         { "Ammo1", KeyCode.A },

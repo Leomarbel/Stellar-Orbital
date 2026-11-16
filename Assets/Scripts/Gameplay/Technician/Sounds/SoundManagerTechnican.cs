@@ -42,21 +42,19 @@ public class SoundManagerTechnican : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
+
+        Instance = this;
+        audioSource = GetComponent<AudioSource>();
 
         for (int i = 0; i < soundList.Length; i++)
         {
             if (soundList[i] == null)
-            {
-                Debug.LogError($"soundList[{i}] is null! Enum: {(SoundType)i}"); //Debugging
-            }
+                Debug.LogError($"soundList[{i}] is null! Enum: {(SoundType)i}", this);
         }
     }
 

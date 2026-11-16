@@ -10687,10 +10687,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Instructions from Inko (Pilot):\nHey Akko, \n\nI need time to gather energy
-    to get our fuel up for the next warp jump.\n\n\nIn the meantime, help me get
-    Ammo from\n\n\nThere are also Lurkers that I can't see, I need your help detecting
-    them from \n"
+  m_text: "Instructions from Inko (Pilot):\nHey Algol, \n\nI need time to gather
+    energy to get our fuel up for the next warp jump.\n\n\nIn the meantime, help
+    me get Ammo from\n\n\nThere are also Lurkers that I can't see, I need your help
+    detecting them from \n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 572add32a5c5a5d48ac48b0f0a1cebe0, type: 2}
   m_sharedMaterial: {fileID: 6016242530291518603, guid: 572add32a5c5a5d48ac48b0f0a1cebe0, type: 2}

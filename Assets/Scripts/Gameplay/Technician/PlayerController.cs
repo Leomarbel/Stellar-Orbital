@@ -50,8 +50,8 @@ public class PlayerController : MonoBehaviour
         }
 
         // Check for interaction
-        if (InputManager.GetKeyDown("interact"))
-
+        if (InputManager.GetKeyDown("interact") ||
+            InputManager.GetKeyDown("interactAlt"))
         {
             animator.SetBool("isInteracting", true);
             StartCoroutine(TryInteractAnimation());
