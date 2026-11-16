@@ -647,9 +647,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 90647696}
-        m_TargetAssemblyTypeName: LeaveToLobby, Assembly-CSharp
-        m_MethodName: DisconnectPlayer
+      - m_Target: {fileID: 145905587}
+        m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
+        m_MethodName: OpenInstructions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -19,13 +19,13 @@ public class UIHandler : MonoBehaviour
         {
             if (settingScreenActive)
             {
-                SoundManagerTechnican.PlaySound(SoundType.SETTINGCLOSE, 0.5f);
+                AudioManager.PlaySound(AudioLibrary.GetClip("SettingsClose"), 0.5f);
                 settingScreen.SetActive(false);
                 settingScreenActive = false;
             }
             else
             {
-                SoundManagerTechnican.PlaySound(SoundType.SETTINGOPEN, 0.5f);
+                AudioManager.PlaySound(AudioLibrary.GetClip("SettingsOpen"), 0.5f);
                 settingScreen.SetActive(true);
                 settingScreenActive = true;
             }

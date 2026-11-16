@@ -58,32 +58,40 @@ public class SoundManagerTechnican : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        audioSource = GetComponent<AudioSource>();
-    }
 
-    public static void PlaySound(SoundType sound, float volume = 1, float pitchMin = 1f, float pitchMax = 1f)
+    public static void PlaySound(
+    SoundType sound,
+    float volume = 1f,
+    float pitchMin = 1f,
+    float pitchMax = 1f)
     {
-        
+        if (Instance == null)
+        {
+            Debug.LogWarning(
+                $"Cannot play {sound}: no active SoundManagerTechnican.");
+            return;
+        }
 
+        if (Instance.audioSource == null)
+        {
+            Debug.LogError("SoundManagerTechnican has no AudioSource.", Instance);
+            return;
+        }
 
         int index = (int)sound;
 
+        if (Instance.soundList == null ||
+            index < 0 ||
+            index >= Instance.soundList.Length ||
+            Instance.soundList[index] == null)
+        {
+            Debug.LogWarning($"Missing audio clip for {sound}.", Instance);
+            return;
+        }
 
-        AudioClip clip = Instance.soundList[index];
-
-
-        float pitch = Random.Range(pitchMin, pitchMax);
-        Instance.audioSource.pitch = pitch;
-
-        Instance.audioSource.PlayOneShot(Instance.soundList[(int)sound], volume);
-
-        // Reset pitch to default after playing to avoid affecting future sounds
+        Instance.audioSource.pitch = Random.Range(pitchMin, pitchMax);
+        Instance.audioSource.PlayOneShot(Instance.soundList[index], volume);
         Instance.audioSource.pitch = 1f;
-
-        // Debugging
-        //Debug.Log($"Playing sound: {sound} at volume {volume}, pitch {pitch}");
     }
 
     public static void PlaySoundVariation(SoundType sound, float volume = 1f)
